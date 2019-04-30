@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AE11D8F-27EF-436F-B960-073BC07FC864}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DAFT</RootNamespace>
+    <AssemblyName>DAFT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Credentials.cs" />
+    <Compile Include="CSVSerializer.cs" />
+    <Compile Include="Misc.cs" />
+    <Compile Include="Modules\Audit\SQLAuditServerSpec.cs" />
+    <Compile Include="Modules\Module.cs" />
+    <Compile Include="Modules\Audit\SQLAuditDatabaseSpec.cs" />
+    <Compile Include="Modules\Audit\SQLAuditPrivAutoExecSp.cs" />
+    <Compile Include="Modules\Audit\SQLAuditPrivImpersonateLogin.cs" />
+    <Compile Include="Modules\Audit\SQLAuditRole.cs" />
+    <Compile Include="Modules\nEW\SQLAuditPrivCreateProcedure.cs" />
+    <Compile Include="Modules\Audit\SQLAuditPrivDbChaining.cs" />
+    <Compile Include="Modules\Audit\SQLAuditPrivTrustworthy.cs" />
+    <Compile Include="Modules\Audit\SQLAuditPrivServerLink.cs" />
+    <Compile Include="Modules\Audit\SQLAuditPrivXp.cs" />
+    <Compile Include="Modules\Audit\SQLAuditSQLiSpSigned.cs" />
+    <Compile Include="Modules\Audit\SQLAuditSQLiSpExecuteAs.cs" />
+    <Compile Include="Modules\SQLUncPathInjection.cs" />
+    <Compile Include="Modules\SQLServerPasswordHash.cs" />
+    <Compile Include="Modules\Link\SQLServerLinkCrawl.cs" />
+    <Compile Include="Modules\SQLServerLoginDefaultPw.cs" />
+    <Compile Include="Modules\Fuzz\SQLFuzzDomainAccount.cs" />
+    <Compile Include="Modules\Fuzz\SQLFuzzServerLogin.cs" />
+    <Compile Include="Modules\Fuzz\SQLFuzzDatabaseName.cs" />
+    <Compile Include="Modules\Fuzz\SQLFuzzObjectName.cs" />
+    <Compile Include="Modules\nEW\SQLAssemblyFile.cs" />
+    <Compile Include="Modules\StoredProcedure\SQLStoredProcedure.cs" />
+    <Compile Include="Modules\StoredProcedure\SQLStoredProcedureAutoExec.cs" />
+    <Compile Include="Modules\StoredProcedure\SQLStoredProcedureSQLi.cs" />
+    <Compile Include="Modules\StoredProcedure\SQLStoredProcedureXP.cs" />
+    <Compile Include="Modules\StoredProcedure\SQLStoredProcedureCLR.cs" />
+    <Compile Include="Modules\Trigger\SQLTriggerDml.cs" />
+    <Compile Include="Modules\Trigger\SQLTriggerDdl.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerPriv.cs" />
+    <Compile Include="Modules\DatabaseInfo\SQLDatabasePriv.cs" />
+    <Compile Include="Modules\DatabaseInfo\SQLDatabaseUser.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerRole.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerRoleMember.cs" />
+    <Compile Include="Modules\DatabaseInfo\SQLDatabaseRole.cs" />
+    <Compile Include="Modules\DatabaseInfo\SQLDatabaseRoleMember.cs" />
+    <Compile Include="Modules\Column\SQLColumnSampleData.cs" />
+    <Compile Include="Modules\Column\SQLColumn.cs" />
+    <Compile Include="Modules\DatabaseInfo\SQLDatabase.cs" />
+    <Compile Include="Modules\SQLAgentJob.cs" />
+    <Compile Include="Modules\SQLServiceAccount.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerLogin.cs" />
+    <Compile Include="Modules\Command\SQLOSCmdAgentJob.cs" />
+    <Compile Include="Modules\Command\SQLOSCmdOle.cs" />
+    <Compile Include="Modules\Command\SQLOSCmdPython.cs" />
+    <Compile Include="Modules\Command\SQLOSCmdR.cs" />
+    <Compile Include="Modules\SQLOleDbProvider.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerCredential.cs" />
+    <Compile Include="Modules\Link\SQLServerLink.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerConfiguration.cs" />
+    <Compile Include="Modules\SQLView.cs" />
+    <Compile Include="Modules\DatabaseInfo\SQLDatabaseSchema.cs" />
+    <Compile Include="Modules\Command\SQLOSCmd.cs" />
+    <Compile Include="Modules\SQLQuery.cs" />
+    <Compile Include="Modules\ServerInfo\SQLServerInfo.cs" />
+    <Compile Include="Modules\SQLSession.cs" />
+    <Compile Include="Modules\SQLSysadminCheck.cs" />
+    <Compile Include="Modules\SQLTables.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Progam.Modules.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLConnection.cs" />
+    <Compile Include="SQLConnectionTest.cs" />
+    <Compile Include="SQLServers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultCredentials.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

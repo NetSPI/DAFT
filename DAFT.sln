@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAFT", "DAFT\DAFT.csproj", "{2AE11D8F-27EF-436F-B960-073BC07FC864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE11D8F-27EF-436F-B960-073BC07FC864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE11D8F-27EF-436F-B960-073BC07FC864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE11D8F-27EF-436F-B960-073BC07FC864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE11D8F-27EF-436F-B960-073BC07FC864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0018AF8-3853-435E-BF53-E1D41BE0DB89}
+	EndGlobalSection
+EndGlobal
