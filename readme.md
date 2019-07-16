@@ -1,5 +1,5 @@
 ## DAFT: Database Audit Framework & Toolkit 
-This is a database auditing and assessment toolkit written in C# and inspired by <a href="https://github.com/NetSPI/PowerUpSQL/wiki">PowerUpSQL</a>.  Feel free to compile it yourself or download the release from <a href="https://github.com/NetSPI/DAFT/releases/tag/0.9.0">here</>.
+This is a database auditing and assessment toolkit written in C# and inspired by <a href="https://github.com/NetSPI/PowerUpSQL/wiki">PowerUpSQL</a>.  Feel free to compile it yourself or download the release from <a href="https://github.com/NetSPI/DAFT/releases/tag/0.9.0">here</a>.
 
 ### DAFT: Common Command Examples
 Below are a few common command examples to get you started.
