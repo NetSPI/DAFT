@@ -1,7 +1,7 @@
 ## DAFT: Database Audit Framework & Toolkit 
 This is a database auditing and assessment toolkit written in C# and inspired by <a href="https://github.com/NetSPI/PowerUpSQL/wiki">PowerUpSQL</a>.
 
-### DAFT Command Examples
+### DAFT: Common Command Examples
 Below are a few common command examples to get you started.
 
 #### List non-default databases
@@ -22,7 +22,7 @@ Below are a few common command examples to get you started.
 #### Execute command through SQL Server
 <pre>DAFT.exe -i "Target\Instance" -m "OSCmd" -q "whoami"</pre>
 
-### DAFT Help
+### DAFT: Help
 Since we lack a proper wiki at the moment below is help output for the tool.
 
 <pre>
