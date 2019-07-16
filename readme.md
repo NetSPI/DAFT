@@ -1,6 +1,12 @@
 ## DAFT: Database Audit Framework & Toolkit 
 This is a database auditing and assessment toolkit inspired by <a href="https://github.com/NetSPI/PowerUpSQL/wiki">PowerUpSQL</a>.
 
+### Authors
+* Authors: Alexander Leary (@0xbadjuju) and Scott Sutherland (@_nullbind)
+
+### License
+* BSD 3-Clause
+
 ### DAFT Command Examples
 Below are a few common command examples to get you started.
 
@@ -25,9 +31,7 @@ Below are a few common command examples to get you started.
 ### DAFT Help
 Since we lack a proper wiki at the moment below is help output for the tool.
 
-### Author, Contributors, and License
-* Authors: Alexander Leary (@0xbadjuju) and Scott Sutherland (@_nullbind)
-* License: BSD 3-Clause
+
 
 
 
