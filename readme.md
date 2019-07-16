@@ -1,5 +1,5 @@
 ## DAFT: Database Audit Framework & Toolkit 
-This is a database auditing and assessment toolkit inspired by <a href="https://github.com/NetSPI/PowerUpSQL/wiki">PowerUpSQL</a>.
+This is a database auditing and assessment toolkit written in C# and inspired by <a href="https://github.com/NetSPI/PowerUpSQL/wiki">PowerUpSQL</a>.
 
 ### Authors
 * Authors: Alexander Leary (@0xbadjuju) and Scott Sutherland (@_nullbind)
