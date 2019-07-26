@@ -366,6 +366,12 @@ namespace DAFT
                 domainController = Environment.GetEnvironmentVariable("LogonServer").Replace("\\\\", "");
             }
 
+            if (string.IsNullOrEmpty(module))
+            {
+                Console.WriteLine("[-] No module selected (-m || --module)");
+                return;
+            }
+
             Console.WriteLine("{0,-40}{1}", "Module", module);
             if (!string.IsNullOrEmpty(domainController)) { Console.WriteLine("{0,-40}{1}", "Domain Controller" + new string('.', 40-17), domainController); }
             if (csv) { Console.WriteLine("{0,-40}{1}", "CSV Output" + new string('.', 40-10), csv); }
