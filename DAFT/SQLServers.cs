@@ -111,7 +111,8 @@ namespace DAFT
             {
                 SizeLimit = objectCountLimit,
                 Filter = filter,
-                SearchScope = SearchScope.Subtree
+                SearchScope = SearchScope.Subtree,
+                PageSize = 1000
             };
 
             try
